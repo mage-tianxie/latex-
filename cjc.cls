@@ -1438,6 +1438,23 @@
   \renewcommand{\algorithmicfalse}{\textbf{FALSE}}
 }
 
+\AtEndOfPackageFile*{algpseudocode}{
+	\algrenewcommand\algorithmicrequire{输入：\ignorespaces}
+	\algrenewcommand\algorithmicensure{输出：\ignorespaces}
+	\algrenewcommand\algorithmicend{\textbf{END}}
+	\algrenewcommand\algorithmicif{\textbf{IF}}
+	\algrenewcommand\algorithmicthen{\textbf{THEN}}
+	\algrenewcommand\algorithmicelse{\textbf{ELSE}}
+	\algrenewcommand\algorithmicfor{\textbf{FOR}}
+	\algrenewcommand\algorithmicforall{\textbf{FOR ALL}}
+	\algrenewcommand\algorithmicdo{\textbf{DO}}
+	\algrenewcommand\algorithmicwhile{\textbf{WHILE}}
+	\algrenewcommand\algorithmicloop{\textbf{LOOP}}
+	\algrenewcommand\algorithmicrepeat{\textbf{REPEAT}}
+	\algrenewcommand\algorithmicuntil{\textbf{UNTIL}}
+	\algrenewcommand\algorithmicreturn{\textbf{RETURN}}
+}
+
 % \PassOptionsToPackage{plaintop}{algorithm}
 \AtEndOfPackageFile*{algorithm}{
   \def\@fs@cfont{\sffamily}
