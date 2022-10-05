@@ -1276,8 +1276,8 @@
 % 原本模仿 \pkg{amsthm} 写成 |\item[\hskip\labelsep\hskip2\ccwd #1\hskip\ccwd]|，
 % 但是却会多出一些间隙。
 \DeclareRobustCommand{\qed}{证毕.}
-\renewenvironment{proof}[1][\proofname]{\par
-  \textbf{\proofname}.\quad
+\renewenvironment{proof}[1][\class@proofname]{\par
+  \textbf{\class@proofname}.\quad
 }{%
   \par\raggedleft\qed\par
 }
